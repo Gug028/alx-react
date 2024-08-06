@@ -70,10 +70,10 @@ describe('App Component', () => {
 
 	  it('calls logOut and shows alert when control + h is pressed', () => {
 		      // Simulate pressing control + h
-		  //     const event = new KeyboardEvent('keydown', { ctrlKey: true, key: 'h' });
-		  //         document.dispatchEvent(event);
-		  //
-		  //             expect(alertMock).toHaveBeenCalledWith('Logging you out');
-		  //                 expect(logOutMock).toHaveBeenCalled();
-		  //                   });
-		  //                   });
+		  const event = new KeyboardEvent('keydown', { ctrlKey: true, key: 'h' });
+		  document.dispatchEvent(event);
+		  
+		  expect(alertMock).toHaveBeenCalledWith('Logging you out');
+		  expect(logOutMock).toHaveBeenCalled();
+	  });
+});
